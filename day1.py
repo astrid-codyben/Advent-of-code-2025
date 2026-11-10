@@ -4,7 +4,7 @@
 from pathlib import Path
 
 # Read the input file located in the same directory as this script
-input_file = Path(__file__).with_name("input-1.txt")
+input_file = Path(__file__).parent / "inputs" / "day1-input.txt"
 
 with open(input_file, "r") as file:
     rotations = file.readlines()
